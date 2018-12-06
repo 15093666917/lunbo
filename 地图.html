@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+	<style>
+            #map{
+            	/*vh:CSS中相对长度单位，表示相对视口高度（Viewport Height），
+            	1vh = 1% * 视口高度。*/
+                width: 50vh;    
+                height: 50vh;
+                border: 1px solid black;
+            }
+        </style>
+        <div id="map"></div>
+        <script src="http://webapi.amap.com/maps?v=1.4.2&key=4e2c29a761a9c245ddd69c5e64be66a5"></script>
+        <script>
+        var map = new AMap.Map('map', {
+//          resizeEnable: false,//调整窗口大小
+            zoom:11,   //地图放大倍数
+            center: [114.016138,34.723360]   //北京地点坐标[116.397428, 39.90923]
+            //郑州地理坐标  [114.022134,34.729465]  [经度，纬度]
+        });
+    </script>
+</html>
